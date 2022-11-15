@@ -1,0 +1,307 @@
+/* Universal Styles */
+
+html {
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3 {
+    padding: 0;
+    margin: 0;
+    font-family: 'Fascinate Inline', cursive;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+body {
+    background-color: black;
+    max-width: 1024px;
+    margin: auto;
+}
+
+/*header section*/
+
+header {
+    max-width: 1024px;
+    display: flex;
+}
+
+.headercontainer {
+    z-index: 5;
+    position:fixed;
+    display: flex;
+    width: 100%;
+    max-width: 1024px;
+    height: 70px;
+    font-family: 'Fascinate Inline', cursive;
+    color: yellow;
+    background-color: rgb(237, 87, 212);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bandname {
+    padding: 0 0 0 .4rem;
+    min-width: 300px;
+}
+
+.navlist {
+    display: flex;
+    list-style-type: none;
+    padding: 0 .4rem;
+}
+
+ul.navlist li {
+    text-align: center;
+    display: inline;
+    padding: .5rem;
+}
+
+ a {
+    color: yellow;
+}
+
+ul.navlist li a:hover {
+    color: blue;
+    border: 2px inset rgb(237, 87, 212);
+    text-decoration: none;
+}
+
+.anchor {
+    padding-top: 5.5rem;
+    margin-top: -5.5rem;
+}
+
+/* Header for Mobile */
+@media only screen and (max-width: 895px) {
+    header .bandname {
+      display: none;
+    } 
+    .navlist a {
+        font-size: 1.4rem;
+    }
+    nav {
+        display: flex;
+        width: 100%;
+    }
+    .navlist {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+/* Main Content */
+.flexmain {
+    display: flex;
+}
+
+.maincontainer{
+    margin-top: 4.5rem;
+    z-index: -2;
+    width: 1024px;
+    height: 768px;
+    display: flex;
+    justify-content: center;
+}
+
+.backgroundimage {
+    justify-content: center;
+    background-color: black;
+    position: fixed;
+    z-index: -2;
+    height: 768px;
+    max-width: 1024px;
+}
+
+#missionanchor {
+    position: absolute;
+    top: 8.65rem;
+}
+
+.bannercontainer {
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+    max-width: 1024px;
+}
+  
+.banner {
+    z-index: 1;
+    box-sizing: border-box;
+    position: absolute;
+    top: 8rem;
+    align-items: center;
+    max-width: 1024px;
+    width: 100%;
+    border: .2rem inset yellow;
+    font-family: 'Fascinate Inline', cursive;
+    color: yellow;
+    background-color: rgba(237, 87, 212, .5);
+}
+
+.mission1 {
+    height: 1.625rem;
+    text-align: center;
+    padding: .5rem;
+}
+
+.mission2 {
+    min-height: 1.25rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Banner for Mobile */
+@media only screen and (max-width: 895px) {
+    .banner h3 {
+        font-family: impact, "sans serif";
+    }
+}
+/* Albums Heading */ 
+
+.albumsheading {
+    position: absolute;
+    top: 16rem;
+    height: 3rem;
+    padding: .4rem 1rem .2rem 1rem;
+    border: 4px groove black;
+    border-radius: 1rem;
+    background-color: antiquewhite;
+    margin: .4rem;
+}
+
+/* Albums section */
+
+.allalbums {
+    display: flex;
+    position: relative;
+    top: -32rem;
+    max-width: 1024px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.albumcontainer {
+    align-items: center;
+}
+
+.albumimage {
+    border: .5rem groove black;
+    border-radius: 1rem;
+    height: 12rem;
+    width: 12rem;
+    margin: .4rem 1rem 0 1rem;
+}
+
+.albumimage img {
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    border: 4px groove black;
+    border-radius: 1rem;
+    background-color: antiquewhite;
+    margin: 0;
+    width: 85%;
+    text-align: center;
+    margin: auto;
+}
+
+
+/* Members Heading Section */
+
+.memberssectioncontainer {
+    justify-content: center;
+    max-width: 1024px;
+    width: 100%;
+    position: relative;
+    top: -31.2rem;
+    /*
+    position: absolute;
+    top: 52.5rem;*/
+    background-color: black;
+    padding: 0 0 2rem 0;
+
+}
+
+.membersheading {
+    position: relatove;
+    height: 3rem;
+    padding: .4rem 1rem .2rem 1rem;
+    border: 4px groove black;
+    border-radius: 1rem;
+    background-color: antiquewhite;
+    margin: .4rem;
+    width: 16rem;
+}
+
+/* Members section */
+
+.allmembers {
+    position: relative;
+    display: flex;
+    max-width: 1024px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.memberimage {
+    border: .5rem groove black;
+    border-radius: 1rem;
+    height: 10rem;
+    width: 10rem;
+    margin: .4rem .1rem 0 .1rem;
+}
+
+.memberimage img {
+    width: 100%;
+    height: 100%;
+}
+
+.biog {
+    border: 4px groove black;
+    border-radius: 1rem;
+    background-color: antiquewhite;
+    margin: 0;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+/* footer section */
+
+.contactcontainer {
+    display: flex;
+    position: relative;
+    top: -31rem;
+    background-color: rgb(237, 87, 212);
+    height: 9rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.contactcontainer h4 {
+    border: 4px groove black;
+    border-radius: 1rem;
+    background-color: antiquewhite;
+    margin: 0;
+    width: auto;
+    text-align: center;
+    margin: auto;
+    padding: .5rem 1rem;
+}
+
+.contactcontainer img {
+    width: 3rem;
+    height: 3rem;
+}
